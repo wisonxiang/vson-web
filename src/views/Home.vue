@@ -1,9 +1,12 @@
 <template>
   <div class="page-wrapper">
     <div class="content">
-      <p class="title">满江红·小院深深 <span class="auth">作者：岳珂</span></p>
+      <p class="title">望海潮·东南形胜 <span class="auth">作者：柳永</span></p>
       <p class="article">
-        小院深深，悄镇日、阴晴无据。春未足，闺愁难寄，琴心谁与？曲径穿花寻蛱蝶，虚阑傍日教鹦鹉。笑十三杨柳女儿腰，东风舞。云外月，风前絮。情与恨，长如许。想绮窗今夜，为谁凝伫？洛浦梦回留佩客，秦楼声断吹箫侣。正黄昏时候杏花寒，廉纤雨。
+        东南形胜，三吴都会，钱塘自古繁华。 烟柳画桥，风帘翠幕，参差十万人家。
+        云树绕堤沙，怒涛卷霜雪，天堑无涯。 市列珠玑，户盈罗绮，竞豪奢。
+        重湖叠巘清嘉，有三秋桂子，十里荷花。 羌管弄晴，菱歌泛夜，嬉嬉钓叟莲娃。
+        千骑拥高牙，乘醉听箫鼓，吟赏烟霞。 异日图将好景，归去凤池夸。
       </p>
       <el-row type="flex" justify="center">
         <el-col :md="24" :lg="18">
@@ -19,8 +22,7 @@
 <script>
 export default {
   name: "Home",
-  methods: {
-  },
+  methods: {},
 };
 </script>
 
@@ -39,7 +41,7 @@ export default {
       margin-bottom: 20px;
       line-height: 25px;
       text-align: left;
-      text-indent:2em;
+      text-indent: 2em;
     }
   }
   .img {
