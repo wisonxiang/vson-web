@@ -1,10 +1,10 @@
 <template>
   <div class="page-wrapper">
-    <div class="wrapper" @click="play">
-      <div class="pai A">
+    <div class="wrapper">
+      <div class="pai A" @click="playFront">
         <img src="@/assets/images/front.png" alt="" />
       </div>
-      <div class="pai B">
+      <div class="pai B" @click="playBack">
         <div class="name">{{ name }}</div>
         <img src="@/assets/images/back.png" alt="" />
       </div>
@@ -65,13 +65,12 @@ export default {
     };
   },
   methods: {
-    play() {
-      if (this.ready) {
-        this.setName();
-        this.frontAnime.play();
-      } else {
-        this.backAnime.play();
-      }
+    playFront() {
+      this.setName();
+      this.frontAnime.play();
+    },
+    playBack() {
+      this.backAnime.play();
     },
     setName() {
       let len = this.nameList.length;
@@ -122,11 +121,12 @@ export default {
 <style lang="scss" scoped>
 .page-wrapper {
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: #eedc82;
+  overflow-y: hidden;
 }
 .wrapper {
   width: 80vh;
