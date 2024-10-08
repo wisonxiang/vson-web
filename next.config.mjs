@@ -4,6 +4,9 @@ const nextConfig = {
   output: "standalone",
   assetPrefix: isProd ? 'https://cdn.vson.top/pc' : '',
   // reactStrictMode: true,
+  images: {
+    domains: ['cdn.vson.top/pc'],
+  },
 };
 
 export default nextConfig;
