@@ -1,0 +1,22 @@
+.header{
+  height: 42px;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  .main{
+    // width: 75vh;
+    background-color: var(--bg-chat-input-color);
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    overflow:hidden;
+    img{
+      cursor: pointer;
+    }
+  }
+}

@@ -1,0 +1,43 @@
+@import '../styles/nomalize.css';
+
+* {
+  box-sizing: border-box;
+}
+
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+
+  --sidebar-bg: #f8fafc;
+  --sidebar-item-active: #e2e8f0;
+  --page-bg: #fff;
+}
+
+:root.dark {
+  --foreground-rgb: 255, 255, 255;
+  --background-start-rgb: 0, 0, 0;
+  --background-end-rgb: 0, 0, 0;
+
+  --sidebar-bg: #1e293b;
+  --sidebar-item-active: #94a3b8;
+  --page-bg: #1d1d1d;
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+}
+
+::view-transition-new(root),
+::view-transition-old(root) {
+  /* 关闭默认动画 */
+  animation: none;
+}
+

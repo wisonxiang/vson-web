@@ -1,0 +1,121 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 6rem;
+  height: 100vh;
+  background-color: var(--bg-color);
+}
+.items{
+  width: 40vh;
+  height: 40vh;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 6px;
+  animation: round 1s;
+  @at-root {
+    @keyframes round {
+      0% {
+        transform: rotate(0) scale(0.1);
+      }
+
+      100% {
+        transform: rotate(720deg) scale(1);
+      }
+    }
+  }
+  .item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    background-image: var(--menu-color);
+    color:var(--font-color);
+    cursor: pointer;
+    &:hover{
+      transform: scale(1.05);
+    }
+  }
+  .item1{
+    border-radius: 2% 70% 4% 70%;
+    box-shadow: -7px 0 5px -5px #333;
+  }
+  .item2{
+    border-radius: 70% 2% 70% 4% ;
+    box-shadow:  7px 0 5px -5px #333;
+  }
+  .item3{
+    border-radius:  70% 2%  70% 4%;
+    box-shadow: -7px 0 5px -5px #333;
+  }
+  .item4{
+    border-radius: 2% 70% 4% 70%;
+    box-shadow:  7px 0 5px -5px #333;
+  }
+}
+
+.icon-caidan {
+  font-size: 36px!important;
+  color: var( --icon-color);
+}
+.fade-enter {
+  opacity: 0;
+}
+
+.fade-enter-active {
+  opacity: 1;
+  transition: opacity 0.5s linear;
+}
+
+.fade-enter-done {
+  opacity: 1;
+}
+
+.fade-exit{
+  /* opacity: 1; */
+  display: none;
+}
+
+.fade-exit-active{
+  /* opacity: 0;
+  transition: opacity 1s linear; */
+}
+
+.fade2-enter {
+  opacity: 0;
+  width: 0;
+  padding: 0 12px;
+}
+
+.fade2-enter-active {
+  opacity: 1;
+  width: 75vh;
+  transition: all 0.2s linear;
+
+}
+
+.fade2-enter-done {
+  opacity: 1;
+  width: 75vh;
+  padding: 0 12px;
+}
+
+.fade2-exit{
+  /* opacity: 0; */
+  width: 0;
+  display: none;
+  padding: 0;
+}
+
+.fade2-exit-active{
+  width: 0;
+}
+
+.fade-exit-done{
+  /* opacity: 0; */
+  width: 0;
+  display: none;
+      padding: 0 ;
+
+}

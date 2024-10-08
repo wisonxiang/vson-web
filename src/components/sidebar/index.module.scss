@@ -1,0 +1,48 @@
+.sidebar {
+  width: 80px;
+  background-color: var(--sidebar-bg);
+  height: 100vh;
+  flex-shrink: 0;
+  padding-top: 80px;
+  position: relative;
+
+  .menus {
+    width: 100%;
+
+    &-item {
+      height: 48px;
+      cursor: pointer;
+      padding-left: 24px;
+      display: flex;
+      align-items: center;
+      margin-bottom: 8px;
+      &:hover{
+        background-color: var(--sidebar-item-active);
+      }
+    }
+    &-item-active{
+      background-color: var(--sidebar-item-active);
+      pointer-events: none;
+    }
+
+    .menus-icon {
+      font-size: 32px;
+      margin-right: 10px;
+    }
+    &-text{
+      display: none;
+    }
+  }
+}
+
+@media (min-width:1024px) {
+  .sidebar {
+    width: 14vw;
+  }
+  .menus-text{
+    display: inline!important;
+  }
+  .menus-icon{
+    font-size: 20px!important;
+  }
+}
