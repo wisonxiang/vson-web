@@ -1,11 +1,18 @@
 /** @type {import('next').NextConfig} */
 const isProd = process.env.NODE_ENV === 'production'
 const nextConfig = {
-  output: "standalone",
+  // output: "standalone",
   assetPrefix: isProd ? 'https://cdn.vson.top/pc' : '',
   // reactStrictMode: true,
   images: {
-    domains: ['cdn.vson.top/pc'],
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'cdn.vson.top',
+        port: '',
+        pathname: '/pc/',
+      },
+    ],
   },
 };
 
