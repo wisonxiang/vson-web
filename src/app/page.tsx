@@ -18,7 +18,7 @@ export default function Home() {
 
   return <div className={styles['page-wrap']}>
     <section className={styles['page-top']}>
-      <Image src={imgMe} className={styles['me-img']} alt="my " />
+      <Image src={imgMe} className={styles['me-img']} alt="my avatar" />
       <div className={styles['me-intro']}>
         <span style={{ 'fontSize': '24px' }}>向文城</span>
         <span>男 | 现居深圳宝安</span>

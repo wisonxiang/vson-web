@@ -1,5 +1,14 @@
 /** @type {import('next').NextConfig} */
 const isProd = process.env.NODE_ENV === 'production'
+
+const rewrites = () => {
+  return [
+    {
+      source: "/api/:slug*",
+      destination: "https://vson.top/api/:slug*",
+    },
+  ];
+};
 const nextConfig = {
   // output: "standalone",
   assetPrefix: isProd ? 'https://cdn.vson.top/pc' : '',
@@ -14,6 +23,7 @@ const nextConfig = {
       },
     ],
   },
+  rewrites
 };
 
 export default nextConfig;

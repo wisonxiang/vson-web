@@ -1,0 +1,122 @@
+.page-wrap {
+  width: 680px;
+  height: calc(100vh - 24px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--page-bg);
+
+  .role {
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .text {
+      font-weight: bold;
+      margin-bottom: 24px;
+      font-size: 18px;
+    }
+
+    .role-inner {
+      height: 150px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    &-img {
+      width: 45%;
+      height: auto;
+      border-radius: 4px;
+      cursor: pointer;
+
+      &:hover {
+        transform: scale(1.4);
+      }
+    }
+  }
+
+  .chat-wrap {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+
+    .chat-inner {
+      flex: 1;
+      padding: 8px;
+      overflow-y: auto;
+      display: flex;
+      flex-direction: column;
+      gap: 18px 0px;
+      line-height: 1.5;
+
+      .chat-item {
+        width: 85%;
+        display: flex;
+
+
+
+        .chat-content {
+          display: flex;
+          justify-content: flex-end;
+          flex-wrap: wrap;
+          background-color: #4ade80;
+          padding: 8px;
+          border-radius: 8px;
+          margin-right: 8px;
+          white-space: pre-wrap;
+          color: #000;
+
+        }
+
+        .chat-content-left {
+          padding: 8px;
+          display: inline;
+          white-space: pre-wrap;
+          justify-content: flex-start;
+          background-color: #ffccc7;
+          margin-left: 8px;
+          min-height: 42px;
+          border-radius: 8px;
+          color: #000;
+        }
+      }
+
+      .chat-icon {
+        width: 42px;
+        height: 42px;
+        border-radius: 6px;
+        overflow: hidden;
+        flex-shrink: 0;
+      }
+
+      .chat-question {
+        align-self: flex-end;
+
+        justify-content: flex-end;
+      }
+    }
+  }
+
+  .input-wrap {
+    flex-shrink: 0;
+    width: 100%;
+
+    .input-tool {
+      width: 100%;
+      height: 50px;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      padding: 0 12px;
+
+      .fasong {
+        font-size: 32px;
+        cursor: pointer;
+        color: #52c41a;
+      }
+    }
+  }
+}

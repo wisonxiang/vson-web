@@ -9,11 +9,13 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@microsoft/fetch-event-source": "^2.0.1",
     "antd": "^5.21.1",
     "next": "14.2.7",
     "react": "^18",
     "react-dom": "^18",
-    "react-transition-group": "^4.4.5"
+    "react-transition-group": "^4.4.5",
+    "use-immer": "^0.10.0"
   },
   "devDependencies": {
     "@types/dom-view-transitions": "^1.0.5",

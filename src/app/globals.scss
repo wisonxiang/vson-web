@@ -41,3 +41,35 @@ body {
   animation: none;
 }
 
+.--ai-cursor {
+  position: relative;
+
+  &::after {
+    position: absolute;
+    top: 2px;
+    left: 4px;
+    display: inline-block;
+    width: 2px;
+    height: 18px;
+    background-color: #000;
+    animation: --ai-shansuo 500ms linear infinite;
+    content: '';
+  }
+
+  @at-root {
+    @keyframes --ai-shansuo {
+      0% {
+        opacity: 1;
+      }
+
+      50% {
+        opacity: 0;
+      }
+
+      100% {
+        opacity: 1;
+      }
+    }
+  }
+}
+
