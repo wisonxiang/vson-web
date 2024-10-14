@@ -10,7 +10,7 @@ const rewrites = () => {
   ];
 };
 const nextConfig = {
-  // output: "standalone",
+  output: "standalone",
   assetPrefix: isProd ? 'https://cdn.vson.top/pc' : '',
   // reactStrictMode: true,
   images: {

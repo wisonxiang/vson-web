@@ -47,7 +47,7 @@ function handleLoad() {
 
 useEffect(() => {
   const script = document.createElement('script');
-  script.src = "http://vson.top:8088/web-apps/apps/api/documents/api.js";
+  script.src = "/web-apps/apps/api/documents/api.js";
   script.async = true;
   script.onload = () => {
     handleLoad()
