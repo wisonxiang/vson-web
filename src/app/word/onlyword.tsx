@@ -8,7 +8,12 @@ declare global {
   }
 }
 
-export default function Onlyword({docUrl}:any) {
+type PropsType = {
+  docUrl: string | undefined
+}
+
+export default function Onlyword(props:PropsType) {
+  const {docUrl} = props
   const config = {
     document: {
       fileType: "docx",

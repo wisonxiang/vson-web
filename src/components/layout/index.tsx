@@ -3,6 +3,10 @@ import Sidebar from '@/components/sidebar'
 import styles from './index.module.scss'
 import { ConfigProvider, theme } from 'antd'
 import { useState } from 'react';
+import zhCN from 'antd/locale/zh_CN';
+// for date-picker i18n
+import 'dayjs/locale/zh-cn';
+
 
 const { defaultAlgorithm, darkAlgorithm } = theme
 
@@ -35,7 +39,7 @@ export default function Layout(props: { children: React.ReactNode }) {
       setDay(!isDay)
     }
   }
-  return <ConfigProvider theme={{ algorithm: isDay ? defaultAlgorithm : darkAlgorithm }} >
+  return <ConfigProvider theme={{ algorithm: isDay ? defaultAlgorithm : darkAlgorithm }}  locale={zhCN}>
     <main className={styles.page}>
       {
         isDay ? <i className={['iconfont', 'icon-night', styles['night']].join(' ')} onClick={handleSwitchDay}></i> : <i className={['iconfont', 'icon-day', styles['day']].join(' ')} onClick={handleSwitchDay}></i>

@@ -7,6 +7,10 @@ const rewrites = () => {
       source: "/api/:slug*",
       destination: "https://vson.top/api/:slug*",
     },
+    {
+      source: "/socket",
+      destination: "http://localhost:3200/socket/",
+    },
   ];
 };
 const nextConfig = {
