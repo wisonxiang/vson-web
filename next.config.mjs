@@ -5,7 +5,7 @@ const rewrites = () => {
   return [
     {
       source: "/api/:slug*",
-      destination: "https://vson.top/api/:slug*",
+      destination: "http://localhost:3200/api/:slug*",
     },
     {
       source: "/socket",
