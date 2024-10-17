@@ -19,7 +19,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning={true}>
       <head>
-        <link rel="stylesheet" href="//at.alicdn.com/t/c/font_4169971_xk0iu4of9x.css"></link>
+        <link rel="stylesheet" href="//at.alicdn.com/t/c/font_4169971_aenvhbrgnq.css"></link>
       </head>
       <body className={inter.className}>
         <Layout children={children} />
